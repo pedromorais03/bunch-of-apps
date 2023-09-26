@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./border.css">
+   <title>Border Radius Visualizer</title>
+</head>
+<body>
+   <main class="container">
+      <div id="box" class="box"></div>
+
+      <div class="inputs">
+         <input type="text" id="change-br"  placeholder="Insert border-radius value"  />
+         <select id="measure">
+            <option value="px" selected>px</option>
+            <option value="%">%</option>
+         </select>
+      </div>
+
+      <div class="color">
+         <span class="info">Select your background-color: </span>
+         <input type="color" id="change-color" />
+         <input type="text" id="show-color" disabled/>
+      </div>
+      
+
+      <span id="errorMessage"></span>
+   </main>
+   
+
+   <script src="./border.js"></script>
+</body>
+</html>
