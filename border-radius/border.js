@@ -1,13 +1,18 @@
 const inputBorder = document.querySelector('#change-br')
 const inputColor = document.querySelector('#change-color')
 const showColor = document.querySelector('#show-color')
+const copyColor = document.querySelector('#copy-color')
 const measure = document.querySelector('#measure')
-const span = document.querySelector("#errorMessage")
+const span = document.querySelector("#error-message")
 const element = document.getElementById('box')
 const defaultBorder = 0
 
 inputBorder.addEventListener("change", changeBorderRadius)
 measure.addEventListener("change", changeBorderRadius)
+copyColor.addEventListener("click", () => {
+   navigator.clipboard.writeText(showColor.value)
+   alert('Hex code copied from clipboard')
+})
 
 inputColor.addEventListener("change", changeColor)
 

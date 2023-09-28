@@ -15,7 +15,7 @@
    height: 100vh;
 }
 
-.box{
+.container .box{
    height: 600px;
    width: 600px;
    border: 2px solid black;
@@ -24,13 +24,13 @@
    transition: .5s all ease;
 }
 
-.inputs{
+.container .inputs{
    display: flex;
    flex-direction: row;
    border: 1px solid black;
 }
 
-#change-br{
+.inputs #change-br{
    /* border: 1px solid black; */
    width: 550px;
    border-radius: 5px;
@@ -38,22 +38,17 @@
    margin: 8px 0;
 }
 
-#change-br:focus{
+.inputs #change-br:focus{
    outline: none;
 }
 
-#measure{
+.inputs #measure{
    width: 50px;
    padding: 0 5px;
    outline: none;
 }
 
-#errorMessage{
-   color: red;
-   font-size: 15px;
-}
-
-.color{
+.container .color{
    display: flex;
    flex-direction: row;
    align-items: center;
@@ -61,11 +56,21 @@
    gap: 5px;
 }
 
-.info{
+.container .color .info{
    padding: 0px 5px;
 }
 
-#show-color{
+.container .color #show-color{
    outline: none;
-   
+}
+
+.container .color #copy-color{
+   background-color: transparent;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+#error-message{
+   color: red;
+   font-size: 12px;
 }
