@@ -3,9 +3,19 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./bin.css">
    <title>Binary Calculator</title>
 </head>
 <body>
-   
+   <main class="container">
+      <h1> Binary To Decimal Number Converter </h1>
+      <div class="content">
+         <input type="text" class="input-number" id="binary-number" placeholder="Binary Number" maxlength="8"/>
+         <button id="convert-button" disabled>Convert!!</button>
+         <input type="text" class="input-number" id="decimal-number" placeholder="Decimal Number" disabled/>
+      </div>
+   </main>
+
+   <script src="./bin.js"></script>
 </body>
 </html>
