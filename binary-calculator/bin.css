@@ -45,3 +45,8 @@
 
    transition: .5s ease
 }
+
+.content .error-message{
+   color: #ef5b5b;
+   display: none;
+}
