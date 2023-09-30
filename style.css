@@ -37,5 +37,16 @@ button{
    border-radius: 15px;
    border: none;
    padding: 12px 20px;
+}
+
+.beginner{
    background-color: #639cf7;
+}
+
+.intermediate{
+   background-color: #FFA500;
+}
+
+.advanced{
+   background-color: #A52A2A;
 }
